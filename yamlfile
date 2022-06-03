@@ -23,6 +23,11 @@ jobs:
     inputs:
        artifactName: drop
 
+  - task: Go@0
+    displayName: "Go Build"
+    inputs:
+      command: 'build'
+      workingDirectory: '$(System.DefaultWorkingDirectory)'
 
   - task: ArtifactoryGenericUpload@2
     inputs:
