@@ -32,12 +32,12 @@ jobs:
         {
           "files": [
             {
-              "pattern": "*.go",
-              "target": "uploadordownload-generic-local/upload/"
+              "pattern": "*.mod",
+              "target": "default-generic-local/upload/"
             },
                         {
               "pattern": "*.yaml",
-              "target": "uploadordownload-generic-local/upload/"
+              "target": "default-generic-local/upload/"
             }
           ]
         }
@@ -51,7 +51,7 @@ jobs:
         {
           "files": [
             {
-              "pattern": "uploadordownload-generic-local/upload/*.go",
+              "pattern": "default-generic-local/upload/*.go",
               "target": "c:\\download\\"
             }
           ]
