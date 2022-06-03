@@ -9,13 +9,13 @@ jobs:
   pool:
     vmImage: windows-2019
   steps:
+    script: go mod init
   - task: GoTool@0
     inputs:
       version: '1.17'
   - task: Go@0
     displayName: "Go Get"
     inputs:
-      command: 'go mod init'
       command: 'get'
       arguments: '-d'
       workingDirectory: '$(System.DefaultWorkingDirectory)'
