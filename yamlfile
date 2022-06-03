@@ -14,7 +14,7 @@ jobs:
     inputs:
       version: '1.17'
       
-   - task: Go@0
+  - task: Go@0
     displayName: "Go Build"
     inputs:
       command: 'build'
