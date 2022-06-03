@@ -32,7 +32,7 @@ jobs:
         {
           "files": [
             {
-              "pattern": "*.git",
+              "pattern": "*.*",
               "target": "default-generic-local/upload/"
             },
                         {
