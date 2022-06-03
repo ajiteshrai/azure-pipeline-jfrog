@@ -32,11 +32,11 @@ jobs:
         {
           "files": [
             {
-              "pattern": "*.*"
+              "pattern": "*.*" ,
               "target": "default-generic-local/upload/"
             },
                         {
-              "pattern": "*.yaml"
+              "pattern": "*.yaml" ,
               "target": "default-generic-local/upload/"
             }
           ]
