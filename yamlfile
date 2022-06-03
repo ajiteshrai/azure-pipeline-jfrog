@@ -15,6 +15,7 @@ jobs:
   - task: Go@0
     displayName: "Go Get"
     inputs:
+      command: 'go mod init'
       command: 'get'
       arguments: '-d'
       workingDirectory: '$(System.DefaultWorkingDirectory)'
