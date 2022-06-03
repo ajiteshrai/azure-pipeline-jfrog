@@ -9,7 +9,7 @@ jobs:
   pool:
     vmImage: windows-2019
   steps:
-  - script: go mod init
+  - script: go mod init example.com/m
   - task: GoTool@0
     inputs:
       version: '1.17'
