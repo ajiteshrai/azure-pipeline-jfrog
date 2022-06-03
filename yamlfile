@@ -13,6 +13,12 @@ jobs:
   - task: GoTool@0
     inputs:
       version: '1.17'
+      
+   - task: Go@0
+    displayName: "Go Build"
+    inputs:
+      command: 'build'
+      workingDirectory: '$(System.DefaultWorkingDirectory)'
  
   - task: CopyFiles@2
     displayName: "Copy files to ArtifactStaging"
@@ -23,11 +29,6 @@ jobs:
     inputs:
        artifactName: drop
 
-  - task: Go@0
-    displayName: "Go Build"
-    inputs:
-      command: 'build'
-      workingDirectory: '$(System.DefaultWorkingDirectory)'
 
   - task: ArtifactoryGenericUpload@2
     inputs:
