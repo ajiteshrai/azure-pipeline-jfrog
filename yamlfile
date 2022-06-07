@@ -48,18 +48,3 @@ jobs:
           ]
         }
       failNoOp: true
-      
-  - task: ArtifactoryGenericDownload@3
-    inputs:
-      connection: 'BasicAuth-artifactory'
-      specSource: 'taskConfiguration'
-      fileSpec: |
-        {
-          "files": [
-            {
-              "pattern": "default-generic-local/upload/*.go",
-              "target": "c:\\download\\"
-            }
-          ]
-        }
-      failNoOp: true
